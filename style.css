@@ -1,0 +1,163 @@
+* {
+    padding   : 0;
+    margin    : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family    : "Poppins";
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    min-height     : 100vh;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg,
+            rgba(59, 173, 227, 1) 0%,
+            rgba(87, 111, 230, 1) 25%,
+            rgba(152, 68, 183, 1) 51%,
+            rgba(255, 53, 127, 1) 100%);
+    animation: AnimateBG 20s ease infinite;
+}
+
+@keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.container {
+    height       : 80px;
+    width        : 350px;
+    background   : #fff;
+    border-radius: 25px;
+    padding      : 20px;
+    transition   : 2s;
+    overflow     : hidden;
+}
+
+.activeContainer {
+    height: 500px;
+}
+
+#inputArea {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+input {
+    padding       : 10px 20px;
+    width         : 60%;
+    border        : 2px solid #242424;
+    outline       : none;
+    text-transform: uppercase;
+    font-weight   : bold;
+    border        : 0;
+}
+
+input::placeholder {
+    text-transform: capitalize;
+    font-weight   : 300;
+    text-align    : center;
+}
+
+.informationArea {
+    width          : 100%;
+    height         : 100%;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+}
+
+.weather-icon img {
+    height       : 200px;
+    width        : 200px;
+    margin-bottom: 5%;
+    display      : none;
+}
+
+.weather-icon {
+    transition: 4s;
+    opacity   : 0;
+}
+
+.city_name {
+    font-size  : 32px;
+    text-align : center;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+.details {
+    width          : 220px;
+    display        : flex;
+    justify-content: space-between;
+    margin-bottom  : 25px;
+    font-weight    : 400;
+}
+
+.description {
+    font-size  : 26px;
+    margin     : 0 0 15px 0;
+}
+
+.wind-data {
+    display  : none;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wind-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.temp-data {
+    display  : none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+
+.temp-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.location-icon {
+    height         : 40px;
+    width          : 40px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    background     : #000;
+    border-radius  : 50%;
+    color          : #fff;
+}
+
+.search-icon {
+    height         : 40px;
+    width          : 40px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    background     : #000;
+    border-radius  : 50%;
+    color          : #fff;
+}
