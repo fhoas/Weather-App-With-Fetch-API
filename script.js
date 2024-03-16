@@ -23,7 +23,7 @@ search.addEventListener("click", function () {
 
       if ((json.cod = "404")) {
         city.innerText = "Are you sure you are from this world?";
-        weatherIcon.src = "giphy.gif";
+        weatherIcon.src = "./assets/giphy.gif";
         tempData.style.display = "none";
         windData.style.display = "none";
         description.style.display = "none";
@@ -31,27 +31,27 @@ search.addEventListener("click", function () {
 
       switch (json.weather[0].main) {
         case "Clear":
-          weatherIcon.src = "sun.png";
+          weatherIcon.src = "./assets/sun.png";
           break;
 
         case "Rain":
-          weatherIcon.src = "rain.png";
+          weatherIcon.src = "./assets/rain.png";
           break;
 
         case "Snow":
-          weatherIcon.src = "snow.png";
+          weatherIcon.src = "./assets/snow.png";
           break;
 
         case "Clouds":
-          weatherIcon.src = "clouds.png";
+          weatherIcon.src = "./assets/clouds.png";
           break;
 
         case "Haze":
-          weatherIcon.src = "haze.png";
+          weatherIcon.src = "./assets/haze.png";
           break;
 
         default:
-          weatherIcon.src = "./thinking.png";
+          weatherIcon.src = "./assets/thinking.png";
       }
 
       tempData.style.display = "flex";
