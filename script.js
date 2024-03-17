@@ -1,5 +1,5 @@
 var input = document.querySelector("input");
-var search = document.querySelector(".fa-magnifying-glass-location");
+var search = document.querySelector(".fa-magnifying-glass");
 var weatherIcon = document.querySelector(".weather-icon img");
 var weatherIconn = document.querySelector(".weather-icon");
 var tempData = document.querySelector(".temp-data");
@@ -7,7 +7,7 @@ var windData = document.querySelector(".wind-data");
 var city = document.querySelector(".city_name");
 var temp = document.querySelector(".temp");
 var wind = document.querySelector(".wind");
-var description = document.querySelector(".description")
+var description = document.querySelector(".description");
 
 search.addEventListener("click", function () {
   var cityName = input.value;
